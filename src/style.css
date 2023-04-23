@@ -97,6 +97,7 @@ html, body {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+  display: none;
 }
 
 .container1 .showMenu {
@@ -629,6 +630,10 @@ html, body {
 
   .menu-button {
     display: inline-block;
+  }
+
+  .container1 .container1__menu {
+    display: flex;
   }
 
   .container1 {

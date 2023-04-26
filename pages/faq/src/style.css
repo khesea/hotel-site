@@ -164,7 +164,7 @@ html, body {
 }
 
 .container2 .container2__content .container2__dropdown .moreinfo {
-  cursor: pointer;
+  z-index: -1;
 }
 
 .container2 .container2__content .container2__dropContent {

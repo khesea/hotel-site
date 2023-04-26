@@ -573,6 +573,10 @@ html, body {
   width: 100%;
 }
 
+.footer .footer__left .footer__form input {
+  outline: 0;
+}
+
 .footer .footer__left .footer__form button {
   border: none;
   background: #5B6460;

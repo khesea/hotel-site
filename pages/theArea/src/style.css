@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  transition: all 0.5s;
 }
 
 html, body {
@@ -788,7 +789,7 @@ html, body {
   .container1 .container1__menu {
     display: flex;
   }
-  
+
   .container1 .container1__content h2 {
     font-size: 36px;
   }

@@ -221,6 +221,13 @@ transition: .5s ease-in-out;
   line-height: 167%;
   color: #5B6460;
   text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container2 .container2__content .container2__right nav a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
 
 .container2 .container2__content .container2__right p {
@@ -279,6 +286,13 @@ transition: .5s ease-in-out;
   line-height: 167%;
   color: #5B6460;
   text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container3 .container3__content .container3__left nav a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
 
 .container3 .container3__content .container3__left p {
@@ -337,6 +351,13 @@ transition: .5s ease-in-out;
   line-height: 167%;
   color: #5B6460;
   text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container4 .container4__content .container4__right nav a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
 
 .container4 .container4__content .container4__right p {

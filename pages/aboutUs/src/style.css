@@ -385,6 +385,10 @@ transition: .5s ease-in-out;
   padding-top: 50px;
 }
 
+.container4__content .container4__left .container4__icons svg:hover {
+  opacity: 0.8;
+}
+
 .container4__content .container4__right {
   display: flex;
   flex-direction: column;
@@ -437,6 +441,31 @@ transition: .5s ease-in-out;
   background: #5B6460;
   border: 1px solid #5B6460;
   padding: 16px 80px;
+  position: relative;
+  overflow: hidden;
+  transition: .2s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.container4__content .container4__right .container4__form .container4__send button:before {
+content: "";
+background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+height: 80px;
+width: 40px;
+position: absolute;
+top: -8px;
+left: -75px;
+transform: skewX(-45deg);
+}
+.container4__content .container4__right .container4__form .container4__send button:hover {
+background: #5B6460;
+opacity: 0.9;
+color: #fff;
+}
+.container4__content .container4__right .container4__form .container4__send button:hover:before {
+left: 250px;
+transition: .5s ease-in-out;
 }
 
 .container4 .container4__footer {

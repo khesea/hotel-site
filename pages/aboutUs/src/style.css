@@ -3,7 +3,7 @@
 * {
   padding: 0;
   margin: 0;
-  transition: all 0.5s;
+  transition: 0.5s;
 }
 
 html, body {
@@ -11,7 +11,7 @@ html, body {
    height: 100%;
    margin: 0;
    padding: 0;
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 .header {
@@ -49,6 +49,31 @@ html, body {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  transition: .2s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.header button:before {
+content: "";
+background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+height: 70px;
+width: 50px;
+position: absolute;
+top: -8px;
+left: -75px;
+transform: skewX(-45deg);
+}
+.header button:hover {
+background: #5B6460;
+opacity: 0.9;
+color: #fff;
+}
+.header button:hover:before {
+left: 250px;
+transition: .5s ease-in-out;
 }
 
 .container1 {

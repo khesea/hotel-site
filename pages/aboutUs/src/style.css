@@ -11,6 +11,7 @@ html, body {
    height: 100%;
    margin: 0;
    padding: 0;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -187,6 +188,28 @@ html, body {
   text-decoration: none;
   border: 0.7px solid #FFFFFF;
   padding: 14px 45px;
+  position: relative;
+  overflow: hidden;
+  transition: .2s ease-in-out;
+}
+
+.container1 .container1__content .container1__links a:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 70px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.container1 .container1__content .container1__links a:hover {
+  background: #756B65;
+  color: #fff;
+}
+.container1 .container1__content .container1__links a:hover:before {
+  left: 200px;
+  transition: .5s ease-in-out;
 }
 
 .container2 {
@@ -368,6 +391,7 @@ html, body {
   align-items: center;
   border: 0.7px solid #5B6460;
   color: #828282;
+  outline: 0;
 }
 
 .container4__content .container4__right .container4__form .container4__send {
@@ -454,6 +478,7 @@ html, body {
 .footer .footer__left .footer__form button {
   border: none;
   background: #5B6460;
+  cursor: pointer;
 }
 
 .footer .footer__left p {

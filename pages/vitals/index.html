@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  	<title>Booking</title>
+  	<meta charset="UTF-8">
+  	<meta name="format-detection" content="telephone=no">
+
+  	<link rel="shortcut icon" href="favicon.ico">
+  	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css?_v=20211201184151" />
+  	<link rel="stylesheet" href="css/style.min.css?_v=20211201184151">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+  	<div class="wrapper">
+  		<header class="header">
+  	<div class="header__container _container">
+  		<div class="header__body">
+  			<div class="header__logo _icon-logo">
+  			</div>
+  			<nav class="menu__body">
+  				<ul class="menu__list ">
+  					<li><a href="" class="menu__link">Home</a></li>
+  					<li><a href="https://vitals13.github.io/huts/huts/theHut" class="menu__link">the hut</a></li>
+  					<li><a href="https://vitals13.github.io/huts/huts/theArea" class="menu__link">The area</a></li>
+  					<li><a href="https://vitals13.github.io/huts/huts/booking_2" class="menu__link">booking</a></li>
+  					<li><a href="https://vitals13.github.io/huts/huts/contactForm" class="menu__link">about us</a></li>
+  					<li><a href="https://vitals13.github.io/huts/huts/faq" class="menu__link">faq</a></li>
+  				</ul>
+  			</nav>
+  			<div class="header__lang lang-header">
+  				<div class="lang-header__current"></div>
+  				<div class="lang-header__items">
+  					<a href="" class="lang-header__item lang-header__item_g">
+  					</a>
+  					<a href="" class="lang-header__item lang-header__item_k">
+  					</a>
+  					<a href="" class="lang-header__item lang-header__item_d">
+  					</a>
+  				</div>
+  			</div>
+  			<div class="header__buttom">
+  				<a href="#ask" class="header__btn btn_btn _popup-link">Book Now</a>
+  			</div>
+  			<div class="icon-menu">
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  			</div>
+  		</div>
+  	</div>
+  </header>
+  		<main class="page">
+  			<section class="booking-slider">
+  				<div class="booking-slider__body _swiper">
+  					<div class="booking-slider__item item-booking-slider">
+  						<div class="item-booking-slider__content">
+  							<div class="item-booking-slider__body">
+  								<h1 class="item-booking-slider__title title">Booking</h1>
+  								<div class="item-booking-slider__geolocation _icon-geolocation"><span>Vesterborg, Denmark</span>
+  								</div>
+  							</div>
+  						</div>
+  						<div class="item-booking-slider__bg _ibg">
+  							<picture><source srcset="img/booking/01.webp" type="image/webp"><img src="img/booking/01.jpg?_v=1638376911516" alt=""></picture>
+  						</div>
+  					</div>
+  					<div class="booking-slider__item item-booking-slider">
+  						<div class="item-booking-slider__content">
+  							<div class="item-booking-slider__body">
+  								<h1 class="item-booking-slider__title title">The Glass Hut</h1>
+  								<div class="item-booking-slider__geolocation _icon-geolocation"><span>Vesterborg, Denmark</span>
+  								</div>
+  								<a href="" class="item-booking-slider__button button">read FAQ</a>
+  							</div>
+  						</div>
+  						<div class="item-booking-slider__bg _ibg">
+  							<picture><source srcset="img/booking/02.webp" type="image/webp"><img src="img/booking/02.jpg?_v=1638376911516" alt=""></picture>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="booking-slider__control control-booking-slider">
+  					<div class="control-booking-slider__arrow control-booking-slider__arrow_next _icon-arrow2">booking</div>
+  				</div>
+  			</section>
+  			<form class="form" method="GET" enctype="multipart/form-data" action="#">
+  				<section class="services">
+  					<div class="services__body">
+  						<div class="services__column">
+  							<h2 class="services__subtitle">Choose Additional Services</h2>
+  							<div data-spollers data-one-spoller class="services__content">
+  								<div class="services__item item-services">
+  									<div class="item-services__items">
+  										<div class="checkbox">
+  											<input id="checkOn" name="form[]" value="1" class="checkbox__item" type="checkbox">
+  											<label class="checkbox__label _icon-plus _icon-checkmark" for="checkOn"></label>
+  										</div>
+  									</div>
+  									<div data-spoller class="item-services__title _icon-pathstroke">Fresh Breakfast for one
+  										<span>400</span>
+  									</div>
+  									<div class="item-services__text">
+  										<div class="item-services__dinner">Classic Dinner</div>
+  										Bread, Coffee, milk, juice, and a selection of spreads + toppings.
+  									</div>
+  								</div>
+  								<div class="services__item item-services">
+  									<div class="item-services__items">
+  										<div class="checkbox">
+  											<input id="checkTwo" name="form[]" value="1" class="checkbox__item" type="checkbox">
+  											<label class="checkbox__label _icon-plus _icon-checkmark" for="checkTwo"></label>
+  										</div>
+  									</div>
+  									<div data-spoller class="item-services__title _icon-pathstroke">Fresh Breakfast for two
+  										<span>500</span>
+  									</div>
+  									<div class="item-services__text">
+  										<div class="item-services__dinner">Classic Dinner</div>
+  										Bread, Coffee, milk, juice, and a selection of spreads + toppings.
+  									</div>
+  								</div>
+  								<div class="services__item item-services">
+  									<div class="item-services__items">
+  										<div class="checkbox">
+  											<input id="checkDinnnerOn" name="form[]" value="1" class="checkbox__item"
+  												type="checkbox">
+  											<label class="checkbox__label _icon-plus _icon-checkmark" for="checkDinnnerOn"></label>
+  										</div>
+  									</div>
+  									<div data-spoller class="item-services__title _icon-pathstroke">Classic Dinner for one
+  										<span>600</span>
+  									</div>
+  									<div class="item-services__text">
+  										<div class="item-services__dinner">Classic Dinner</div>
+  										Bread, Coffee, milk, juice, and a selection of spreads + toppings.
+  									</div>
+  								</div>
+  								<div class="services__item item-services">
+  									<div class="item-services__items">
+  										<div class="checkbox">
+  											<input id="checkDinnnerTwo" name="form[]" value="1" class="checkbox__item"
+  												type="checkbox">
+  											<label class="checkbox__label _icon-plus _icon-checkmark"
+  												for="checkDinnnerTwo"></label>
+  										</div>
+  									</div>
+  									<div data-spoller class="item-services__title _icon-pathstroke">Classic Dinner for two
+  										<span>800</span>
+  									</div>
+  									<div class="item-services__text">
+  										<div class="item-services__dinner">Classic Dinner</div>
+  										Bread, Coffee, milk, juice, and a selection of spreads + toppings.
+  									</div>
+  								</div>
+  								<div class="services__item item-services">
+  									<div class="item-services__items">
+  										<div class="checkbox">
+  											<input id="checkCharge" name="form[]" value="1" class="checkbox__item" type="checkbox">
+  											<label class="checkbox__label _icon-plus _icon-checkmark" for="checkCharge"></label>
+  										</div>
+  									</div>
+  									<div data-spoller class="item-services__title _icon-pathstroke">Electric Car Charge
+  										<span>800</span>
+  									</div>
+  									<div class="item-services__text">
+  										<div class="item-services__dinner">Classic Dinner</div>
+  										Bread, Coffee, milk, juice, and a selection of spreads + toppings.
+  									</div>
+  								</div>
+  							</div>
+  							<div class="services__information information">
+  								<div class="information__body">
+  									<div class="information__column">
+  										<div class="information__title">Hut rules</div>
+  										<ul class="information__list">
+  											<li class="information__condition">Check-in: 2:00 PM - 11:00 PM</li>
+  											<li class="information__condition">Checkout: 11:00 AM</li>
+  											<li class="information__condition">Not suitable for children and infants</li>
+  											<li class="information__condition">No smoking</li>
+  											<li class="information__condition">No pets</li>
+  										</ul>
+  									</div>
+  									<div class="information__column">
+  										<div class="information__title">Cancellation policy</div>
+  										<ul class="information__list">
+  											<li>Free cancellation until 1:00 PM on Mar 27</li>
+  											<li>After that, cancel before 2:00 PM on Apr 1 and get a 50% refund, minus the first
+  												night and service fee.</li>
+  										</ul>
+  									</div>
+  									<div class="information__column">
+  										<div class="information__title">Important Information</div>
+  										<ul class="information__list">
+  											<li>You need to hike a steep hill to arrive at the treehouses, it takes approx 20-30
+  												minutes on a trail with stairs and uneven ground.</li>
+  										</ul>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="services__button button-services">
+  								<button class="button-services__btn btn_btn" type="submit">read FAQ</button>
+  							</div>
+  						</div>
+  						<div class="services__column">
+  							<div class="services__price price-services">
+  								<div class="price-services__block">
+  									<div class="price-services__body">
+  										<div class="price-services__row">
+  											<div class="price-services__sum">3.200kr</div>
+  											<div class="price-services__day">/ night</div>
+  										</div>
+  										<form class="price-services__form" method="GET" enctype="multipart/form-data" action="#">
+  											<div class="price-services__items">
+  												<div class="price-services__number">
+  													<div class="price-services__item">
+  														<label class="price-services__label" for="checkin">Check in</label>
+  														<input id="checkin" name="form[]" class="price-services__input" type="text"
+  															data-value="4/29/2021">
+  													</div>
+  													<div class="price-services__item">
+  														<label class="price-services__label" for="checkout">Check out</label>
+  														<input id="checkout" name="form[]" class="price-services__input" type="text"
+  															data-value="4/30/2021">
+  													</div>
+  													<div class="price-services__item">
+  														<h2 class="price-services__title">Guests</h2>
+  														<div class="quantity">
+  															<div class="quantity__button quantity__button_minus"></div>
+  															<div class="quantity__input">
+  																<input autocomplete="off" type="text" name="form[]" value="1">
+  															</div>
+  															<div class="quantity__button quantity__button_plus"></div>
+  														</div>
+  													</div>
+  												</div>
+  												<div class="price-services__button">
+  													<button class="price-services__btn btn_big" type="submit">Book</button>
+  												</div>
+  												<div class="price-services__info info-price">
+  													<div class="info-price__body">
+  														<div class="info-price__column">
+  															<ul class="info-price__list">
+  																<li><a href="" class="info-price__link">3.200kr x 2 nights</a></li>
+  																<li><a href="" class="info-price__link">Classic Dinner for one</a></li>
+  																<li><a href="" class="info-price__link">Electric Car Charge</a></li>
+  																<li><a href="" class="info-price__link"><span>10% discount</span></a>
+  																</li>
+  															</ul>
+  														</div>
+  														<div class="info-price__column">
+  															<ul class="info-price__services">
+  																<li><a href="" class="info-price__link"> 6.400kr</a></li>
+  																<li><a href="" class="info-price__link">600kr</a></li>
+  																<li><a href="" class="info-price__link">800kr</a></li>
+  																<li><a href="" class="info-price__link"><span>-200kr</span></a></li>
+  															</ul>
+  														</div>
+  													</div>
+  												</div>
+  												<div class="price-services__total total-services">
+  													<div class="total-services__body">
+  														<a href="" class="total-services__total">Total</a>
+  														<a href="" class="total-services__price">7.000kr</a>
+  													</div>
+  												</div>
+  												<div class="price-services__coupon coupon-services">
+  													<input name="form[]" class="coupon-services__input" type="text"
+  														data-value="Coupon Code">
+  													<div class="coupon-services__button">
+  														<button class="coupon-services__btn btn_btn" type="submit">apply</button>
+  													</div>
+  												</div>
+  											</div>
+  										</form>
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</section>
+  			</form>
+  		</main>
+  		<footer class="footer">
+  	<div class="footer__content _container">
+  		<div class="footer__block">
+  			<div class="footer__column">
+  				<form class="footer__form form-footer" method="GET" enctype="multipart/form-data" action="#">
+  					<div class="form-footer__container _container">
+  						<h2 class="form-footer__title">Newsletter</h2>
+  						<div class="form-footer__body">
+  							<div class="form-footer__item">
+  								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+  									data-value="Email Adrdess" class="form-footer__input ">
+  							</div>
+  							<button class="form-footer__button _icon-arrow2" type="submit"></button>
+  						</div>
+  						<div class="form-footer__stock">
+  							Sign up to our newsletter for special things and receive 10% off your next order.
+  						</div>
+  					</div>
+  				</form>
+  			</div>
+  			<div class="footer__column">
+  				<div class="footer__info">
+  					<ul class="footer__policy">
+  						<li>
+  							<a href="">TERMS AND CONDITIONS</a>
+  						</li>
+  						<li>
+  							<a href="">CENCELLATION POLICY</a>
+  						</li>
+  						<li>
+  							<a href="">PRIVACY POLICY</a>
+  						</li>
+  					</ul>
+  					<ul class="footer__bank-card">
+  						<li>
+  							<div class="_icon-paypal"></div>
+  						</li>
+  						<li>
+  							<div class="_icon-mastercart"></div>
+  						</li>
+  						<li>
+  							<div class="_icon-visa"></div>
+  						</li>
+  						<li>
+  							<div class="_icon-bank"></div>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="footer__copy copy-footer">
+  			<div class="copy-footer__container _container">
+  				<div class="copy-footer__body">© 2021 The Glass Huts</div>
+  			</div>
+  		</div>
+  	</div>
+  </footer>
+  	</div>
+  	<div class="popup popup_popup popup_ask">
+  	<div class="popup__content">
+  		<div class="popup__body">
+  			<a href="" class="popup__close _icon-x_close"></a>
+  			<form class="form-ask" method="GET" enctype="multipart/form-data" action="#">
+  				<section class="form-ask__body">
+  					<div class="form-ask__item form-ask__item_w">
+  						<label class="form-ask__label" for="checkin">Check in</label>
+  						<input id="checkin" name="datetimes" class="form-ask__input" type="text" autocomplete="off"
+  							data-value="Add dates">
+  					</div>
+  					<div class="form-ask__item form-ask__item_out">
+  						<label class="form-ask__label" for="checkout">Check out</label>
+  						<input autocomplete="off" id="checkout" name="form[]" class="form-ask__input" type="text"
+  							data-value="Add dates">
+  					</div>
+  					<div class="form-ask__item">
+  						<h2 class="form-ask__title">Guests</h2>
+  						<div class="quantity">
+  							<div class="quantity__button quantity__button_minus"></div>
+  							<div class="quantity__input">
+  								<input autocomplete="off" type="text" name="form[]" value="1">
+  							</div>
+  							<div class="quantity__button quantity__button_plus"></div>
+  						</div>
+  					</div>
+  				</section>
+  				<div class="form-ask__button">
+  					<button class="button btn_big btn_pop" autofocus type="submit">Book</button>
+  				</div>
+  			</form>
+
+  		</div>
+
+  	</div>
+  </div>
+
+  <div class="popup popup_popup popup_payment">
+  	<div class="popup__content">
+  		<div class="popup__body popup__body_p">
+  			<a href="" class="popup__close _icon-x_close"></a>
+  			<form class="form-payment" method="GET" enctype="multipart/form-data" action="#">
+  				<div class="form-payment__body">
+  					<div class="form-payment__column">
+  						<div class="personal-services__item">
+  							<input id="firstName" name="form[]" class="personal-services__input" autocomplete="off" type="text"
+  								data-value="First Name*">
+  						</div>
+  					</div>
+  					<div class="form-payment__column">
+  						<div class="personal-services__item">
+  							<input id="lastName" name="form[]" class="personal-services__input" type="text"
+  								data-value="Last Name*">
+  						</div>
+  					</div>
+  					<div class="form-payment__column">
+  						<div class="personal-services__item">
+  							<input id="email" name="form[]" class="personal-services__input" type="email" data-value="Email">
+  						</div>
+  					</div>
+  					<div class="form-payment__column">
+  						<div class="personal-services__item">
+  							<input id="subject" name="form[]" class="personal-services__input" type="text"
+  								data-value="Subject">
+  						</div>
+  					</div>
+  				</div>
+  				<div class="form-payment__textarea">
+  					<textarea autocomplete="off" name="form[]" data-value="Message" data-error="Ошибка"
+  						class="form-payment__input"></textarea>
+  				</div>
+  				<div class="form-payment__btn">
+  					<button class="form-payment__buttom btn_btn" autofocus type="submit">send</button>
+  				</div>
+  			</form>
+  		</div>
+  	</div>
+  </div>
+
+  	<!-- Swiper -->
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAxyVducJqWJTm5qbHo5zfPNBxDJF4xIU"
+  	type="text/javascript"></script>
+  <script src="js/vendors.min.js?_v=20211201184151"></script>
+  <script src="js/app.min.js?_v=20211201184151"></script>
+
+
+  </body>
+
+</html>

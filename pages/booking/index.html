@@ -82,22 +82,22 @@
           <div class="container2__paragraph">
             <h4>Hut rules</h4>
             <hr>
-            <p>Check-in:  2:00 PM - 11:00 PM
-              <br>
-              Checkout: 11:00 AM
-              <br>
-              Not suitable for children and infants
-              <br>
-              No smoking
-              <br>
-              No pets</p>
+            <div class="container2__conditions">
+              <p>Check-in:  2:00 PM - 11:00 PM</p>
+              <p>Checkout: 11:00 AM</p>
+              <p>Not suitable for children and infants</p>
+              <p>No smoking</p>
+              <p>No pets</p>
+            </div>
           </div>
           <div class="container2__paragraph">
             <h4>Cancellation policy</h4>
             <hr>
-            <p>Free cancellation until 1:00 PM on Mar 27
-              <br>After that, cancel before 2:00 PM on Apr 1 and get a 50% refund, minus the first night and service fee.
-            </p>
+            <div class="container2__conditions">
+              <p>Free cancellation until 1:00 PM on Mar 27</p>
+              <p>After that, cancel before 2:00 PM on Apr 1 and get a 50% refund, minus the first night and service fee.
+              </p>
+            </div>
           </div>
           <div class="container2__paragraph">
             <h4>Important Information</h4>
@@ -108,26 +108,35 @@
         </div>
         <div class="container2__right">
           <form class="container2__form" action="index.html" method="post">
-            <p>3.200kr <span>/ night</span> </p>
+            <h5>3.200kr <span>/ night</span> </h5>
             <div class="form__first">
               <div class="form__date">
                 <p>Check in</p>
-                <input type="date" name="Date">
+                <input type="date" name="Date" id="davaToday">
               </div>
               <div class="form__date">
-                <p>Check in</p>
-                <input type="date" name="Date">
+                <p>Check out</p>
+                <input type="date" name="Date" id="davaTomorrow">
               </div>
               <div class="form__date">
                 <p>Guests</p>
                 <div class="form__counter">
-                  <button type="button" name="button" onclick="minus()">-</button>
+                  <button type="button" name="button" onclick="minus()" id="minusButton">
+                    <svg width="9" height="2" viewBox="0 0 9 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line y1="0.620361" x2="9" y2="0.620361" stroke="black"/>
+                    </svg>
+                </button>
                   <span id="count">1</span>
-                  <button type="button" name="button" onclick="plus()">+</button>
+                  <button type="button" name="button" onclick="plus()">
+                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line y1="4.62036" x2="9" y2="4.62036" stroke="black"/>
+                      <line x1="4.5" y1="9.12036" x2="4.5" y2="0.120361" stroke="black"/>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
-            <button type="button" name="button">book</button>
+            <button type="button" name="button" id="bookButton">book</button>
             <div class="form__second">
               <div class="form__options">
                 <p>3.200kr x <span id="nights">2</span> nights</p>

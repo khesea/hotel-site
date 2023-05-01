@@ -16,3 +16,11 @@ function plus() {
   digit++;
   count.textContent = digit;
 }
+
+
+const today = new Date()
+const tomorrow = new Date(today.setDate(today.getDate() + 1))
+
+document.getElementById('davaToday').valueAsDate = new Date();
+
+document.getElementById('davaTomorrow').valueAsDate = tomorrow;

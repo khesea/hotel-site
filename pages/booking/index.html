@@ -108,7 +108,41 @@
         </div>
         <div class="container2__right">
           <form class="container2__form" action="index.html" method="post">
-
+            <p>3.200kr <span>/ night</span> </p>
+            <div class="form__first">
+              <div class="form__date">
+                <p>Check in</p>
+                <input type="date" name="Date">
+              </div>
+              <div class="form__date">
+                <p>Check in</p>
+                <input type="date" name="Date">
+              </div>
+              <div class="form__date">
+                <p>Guests</p>
+                <div class="form__counter">
+                  <button type="button" name="button" onclick="minus()">-</button>
+                  <span id="count">1</span>
+                  <button type="button" name="button" onclick="plus()">+</button>
+                </div>
+              </div>
+            </div>
+            <button type="button" name="button">book</button>
+            <div class="form__second">
+              <div class="form__options">
+                <p>3.200kr x <span id="nights">2</span> nights</p>
+                <p> <span id="price">6400</span> kr </p>
+              </div>
+            </div>
+            <hr>
+            <div class="form__third">
+              <p>Total</p>
+              <p> <span id="total">6400</span> kr</p>
+            </div>
+            <div class="form__fourth">
+              <input type="text" name="" value="" placeholder="Coupon Code">
+              <input type="submit" name="" value="Apply">
+            </div>
           </form>
         </div>
       </article>

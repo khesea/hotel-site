@@ -518,7 +518,7 @@ left: 750px;
 transition: 0.7s ease-in-out;
 }
 
-.container2 .container2__right .container2__form .form__second .form__options {
+.form__options {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -528,6 +528,22 @@ transition: 0.7s ease-in-out;
   font-size: 18px;
   line-height: 112%;
   color: #333333;
+}
+
+.formDesk__flex {
+  display: flex;
+}
+
+.form__options:nth-child(n+3) {
+  display: none;
+}
+
+.form__options:last-child {
+  display: flex;
+}
+
+.form__options:nth-child(n+2) {
+  margin-top: 20px;
 }
 
 .container2 .container2__right .container2__form .form__third {

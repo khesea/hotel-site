@@ -808,6 +808,11 @@ transition: 0.7s ease-in-out;
     height: 28px;
   }
 
+  .add__checkbox {
+    width: 28px;
+    height: 28px;
+  }
+
   .container2 .container2__content .container2__left .container2__paragraph .container2__services .services__part .services__text p:first-child {
     font-size: 16px;
   }
@@ -948,6 +953,11 @@ transition: 0.7s ease-in-out;
     height: 24px;
   }
 
+  .add__checkbox {
+    width: 24px;
+    height: 24px;
+  }
+
   .container2 .container2__content .container2__left .container2__paragraph .container2__services .services__part .services__text p:first-child {
     font-size: 14px;
   }
@@ -1015,6 +1025,11 @@ transition: 0.7s ease-in-out;
   }
 
   .additional__checkbox {
+    width: 20px;
+    height: 20px;
+  }
+
+  .add__checkbox {
     width: 20px;
     height: 20px;
   }

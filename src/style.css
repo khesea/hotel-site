@@ -216,7 +216,7 @@ transition: .5s ease-in-out;
   align-items: center;
 }
 
-.container1 .container1__book button:before {
+.container1 .container1__book a:before {
 content: "";
 background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
 height: 170px;
@@ -227,14 +227,14 @@ left: -175px;
 transform: skewX(-45deg);
 }
 
-.container1 .container1__book button:hover {
+.container1 .container1__book a:hover {
   background: #6B7370;
   color: #fff;
 }
 
-.container1 .container1__book button:hover:before {
+.container1 .container1__book a:hover:before {
   left: 300px;
-  transition: .5s ease-in-out;
+  transition: .6s ease-in-out;
 }
 
 .container1 .container1__book .container1__price {
@@ -546,7 +546,7 @@ transform: skewX(-45deg);
   text-decoration: none;
 }
 
-.container4__content .container4__right .container4__book button:before {
+.container4__content .container4__right .container4__book a:before {
   content: "";
   background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
   height: 120px;
@@ -557,13 +557,13 @@ transform: skewX(-45deg);
   transform: skewX(-45deg);
 }
 
-.container4__content .container4__right .container4__book button:hover {
+.container4__content .container4__right .container4__book a:hover {
   background: #5B6460;
   color: #fff;
   opacity: 0.9;
 }
 
-.container4__content .container4__right .container4__book button:hover:before {
+.container4__content .container4__right .container4__book a:hover:before {
   left: 400px;
   transition: .5s ease-in-out;
 }

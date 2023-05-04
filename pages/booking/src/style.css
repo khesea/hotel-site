@@ -784,7 +784,7 @@ transition: 0.7s ease-in-out;
   }
 
   .container1 .container1__content p {
-    font-size: 12px;
+    display: none;
   }
 
   .container2 {
@@ -1007,7 +1007,6 @@ transition: 0.7s ease-in-out;
 @media (max-width: 450px) {
   .container1 .container1__content h2 {
     padding-bottom: 10px;
-    padding-right: 20px;
     font-size: 26px;
   }
 

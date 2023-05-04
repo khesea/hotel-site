@@ -6,7 +6,6 @@ function myFunction(x) {
 
 //счетчик в форме
 const count = document.getElementById('count');
-const count2 = document.getElementById('count2');
 const totalText = document.getElementById('total');
 let digit = 1;
 
@@ -14,7 +13,6 @@ function minus() {
   if (digit > 1) {
     digit--;
     count.textContent = digit;
-    count2.textContent = digit;
   }
 }
 
@@ -104,7 +102,7 @@ const price10 = parseInt(document.getElementById('price10').innerHTML);
 const price11 = parseInt(document.getElementById('price11').innerHTML);
 
 
-let total = digit*(price1 + price2);
+let total = price1 + price2;
 totalText.textContent = total;
 
 //вписывать добавления с галочек в форму

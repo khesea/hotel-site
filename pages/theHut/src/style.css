@@ -718,7 +718,7 @@ transition: .5s ease-in-out;
 
 @media (max-width: 450px) {
   .container1 {
-    height: 30vh;
+    height: 25vh;
   }
 
   .container1 .container1__content h2 {

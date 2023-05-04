@@ -932,6 +932,14 @@ transition: 0.7s ease-in-out;
     height: 25vh;
   }
 
+  .container2 .container2__content .container2__left .container2__paragraph .container2__services {
+    padding: 8px 18px;
+  }
+
+  .container2 .container2__content .container2__left .container2__paragraph .container2__services:nth-child(n+2) {
+    margin-top: 18px;
+  }
+
   .container2 {
     padding: 28px;
   }

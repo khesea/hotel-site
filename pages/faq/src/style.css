@@ -187,13 +187,14 @@ transition: .5s ease-in-out;
   font-size: 20px;
   line-height: 100%;
   color: #333333;
+  z-index: -1;
 }
 
 .container2 .container2__content .container2__dropdown .moreinfo {
   z-index: -1;
 }
 
-.container2 .container2__content .container2__dropContent {
+.container2__dropContent {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -202,6 +203,24 @@ transition: .5s ease-in-out;
   color: #333333;
   padding: 30px 0;
   display: none;
+  overflow: hidden;
+}
+
+.slideIn {
+  display: block;
+  animation-name: slideIn;
+  animation-duration: 1s;
+}
+
+@keyframes slideIn {
+  0% {
+    height: 0px;
+    padding: 0;
+  }
+  100% {
+    height: 122px;
+    padding: 30px 0;
+  }
 }
 
 .container2 .container2__content .container2__dropContent p {
@@ -341,21 +360,21 @@ transition: .5s ease-in-out;
     width: 28px;
   }
 
-  .container2 .container2__content .container2__dropContent {
+  .container2__dropContent {
     font-size: 14px;
     padding: 20px 0;
   }
 
-@keyframes slideIn {
-  0% {
-    height: 0px;
-    padding: 0;
+  @keyframes slideIn {
+    0% {
+      height: 0px;
+      padding: 0;
+    }
+    100% {
+      height: 112px;
+      padding: 20px 0;
+    }
   }
-  100% {
-    height: 200px;
-    padding: 20px 0;
-  }
-}
 
   .footer {
     margin-top: 50px;
@@ -420,8 +439,19 @@ transition: .5s ease-in-out;
     font-size: 16px;
   }
 
-  .container2 .container2__content .container2__dropContent {
+  .container2__dropContent {
     font-size: 13px;
+  }
+
+  @keyframes slideIn {
+    0% {
+      height: 0px;
+      padding: 0;
+    }
+    100% {
+      height: 108px;
+      padding: 20px 0;
+    }
   }
 
   .footer {
@@ -442,12 +472,19 @@ transition: .5s ease-in-out;
 }
 
 @media (max-width: 550px) {
-  .container2 .container2__content .container2__dropdown h3 {
-    font-size: 14px;
+  @keyframes slideIn {
+    0% {
+      height: 0px;
+      padding: 0;
+    }
+    100% {
+      height: 124px;
+      padding: 10px 0;
+    }
   }
 
-  .container2 .container2__content .container2__dropContent {
-    font-size: 12px;
+  .container2__dropContent {
+    padding: 10px 0;
   }
 
   .footer .footer__right .footer__nav a {
@@ -460,6 +497,17 @@ transition: .5s ease-in-out;
 }
 
 @media (max-width: 450px) {
+  @keyframes slideIn {
+    0% {
+      height: 0px;
+      padding: 0;
+    }
+    100% {
+      height: 144px;
+      padding: 10px 0;
+    }
+  }
+
   .footer .footer__right .footer__nav {
     padding-bottom: 20px;
   }
@@ -474,6 +522,17 @@ transition: .5s ease-in-out;
 }
 
 @media (max-width: 400px) {
+  @keyframes slideIn {
+    0% {
+      height: 0px;
+      padding: 0;
+    }
+    100% {
+      height: 160px;
+      padding: 10px 0;
+    }
+  }
+
   .footer {
     padding: 40px;
   }

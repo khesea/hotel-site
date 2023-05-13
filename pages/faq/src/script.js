@@ -9,13 +9,12 @@ theParent.addEventListener('click', doSomething);
 function doSomething(e) {
   if (e.target != e.currentTarget) {
     let clickedItem = e.target;
-    clickedItem.querySelector('.container2__dropContent').style.display = 'block';
+    clickedItem.querySelector('.container2__dropContent').classList.add('slideIn');
     clickedItem.querySelector('.moreinfo').style.display = 'none';
     clickedItem.style.display = 'block';
     clickedItem.style.border = 'none';
     clickedItem.style.padding = '21px 24px';
     clickedItem.style.background = '#E9ECE0';
-    clickedItem.classList.add('animationForText');
   }
   e.stopPropagation();
 }
